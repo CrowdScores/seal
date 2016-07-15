@@ -1,0 +1,645 @@
+# Please insert new items alphabetically.
+
+salt-states:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+internal-notifications:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+aggregators:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+scrapers:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+scores:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+orchestration:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+notification:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+users:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+muter:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+translations:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+scrapy-spiders:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+polls:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+metrics:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+league_tables:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+harvester:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+football:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+report-stats:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+customers:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+autoscaler:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+auto-limited-coverage:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+aggregator-debug:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+json-api-client:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+search-gobbler:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+service-template:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+serialization:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+documentation:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+resulting:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
+
+unmatched-shit:
+  members:
+    - andrewwilson
+    - geuben
+    - jcalero
+    - johtso
+    - siminio
+
+  channel:
+    "#developers"
+
+  exclude_titles:
+    - "[DO NOT MERGE]"
+    - DO NOT MERGE
+    - WIP
+    - "[DO NOT SEAL]"
+    - "[DON'T SEAL]"
+    - DO NOT SEAL
+    - DON'T SEAL
+
+  quotes:
+    - Stop playing Pokemon Go and write some code!
