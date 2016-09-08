@@ -8,7 +8,7 @@ backend-developers:
     - johtso
     - siminio
     - glebanatalia
-    - 115100
+    - "115100"
 
   channel:
     "#developers"
