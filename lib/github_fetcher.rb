@@ -2,10 +2,12 @@ require 'octokit'
 
 class GithubFetcher
   ORGANISATION ||= ENV['SEAL_ORGANISATION']
+  # TODO: remove media type when review support comes out of preview
+  Octokit.default_media_type = 'application/vnd.github.black-cat-preview+json'
 
   attr_accessor :people
 
-  def initialize(team_members_accounts, use_labels, exclude_labels, exclude_titles, exclude_repos)
+  def initialize(team_members_accounts, use_labels, exclude_labels, exclude_titles, exclude_repos, include_repos)
     @github = Octokit::Client.new(:access_token => ENV['GITHUB_TOKEN'])
     @github.user.login
     @github.auto_paginate = true
@@ -15,6 +17,7 @@ class GithubFetcher
     @exclude_titles = exclude_titles.map(&:downcase).uniq if exclude_titles
     @labels = {}
     @exclude_repos = exclude_repos
+    @include_repos = include_repos
   end
 
   def list_pull_requests
@@ -27,7 +30,7 @@ class GithubFetcher
 
   private
 
-  attr_reader :use_labels, :exclude_labels, :exclude_titles, :exclude_repos
+  attr_reader :use_labels, :exclude_labels, :exclude_titles, :exclude_repos, :include_repos
 
   def present_pull_request(pull_request, repo_name)
     pr = {}
@@ -37,6 +40,7 @@ class GithubFetcher
     pr['repo'] = repo_name
     pr['comments_count'] = count_comments(pull_request, repo_name)
     pr['thumbs_up'] = count_thumbs_up(pull_request, repo_name)
+    pr['approved'] = approved?(pull_request, repo_name)
     pr['updated'] = Date.parse(pull_request.updated_at.to_s)
     pr['labels'] = labels(pull_request, repo_name)
     pr
@@ -63,6 +67,11 @@ class GithubFetcher
     thumbs_up = comments_string.scan(/:\+1:/).count.to_s
   end
 
+  def approved?(pull_request, repo)
+    reviews = @github.get("repos/#{ORGANISATION}/#{repo}/pulls/#{pull_request.number}/reviews")
+    reviews.any? { |review| review.state == 'APPROVED' }
+  end
+
   def labels(pull_request, repo)
     return [] unless use_labels
     key = "#{ORGANISATION}/#{repo}/#{pull_request.number}".to_sym
@@ -73,7 +82,8 @@ class GithubFetcher
     excluded_repo?(repo) ||
       excluded_label?(pull_request, repo) ||
       excluded_title?(pull_request.title) ||
-      !person_subscribed?(pull_request)
+      !person_subscribed?(pull_request) ||
+      (include_repos && !explicitly_included_repo?(repo))
   end
 
   def excluded_label?(pull_request, repo)
@@ -89,5 +99,10 @@ class GithubFetcher
   def excluded_repo?(repo)
     return false unless exclude_repos
     exclude_repos.include?(repo)
+  end
+
+  def explicitly_included_repo?(repo)
+    return false unless include_repos
+    include_repos.include?(repo)
   end
 end

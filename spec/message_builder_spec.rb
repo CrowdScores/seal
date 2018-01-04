@@ -14,6 +14,7 @@ describe MessageBuilder do
         'repo' => 'whitehall',
         'comments_count' => '5',
         'thumbs_up' => '0',
+        'approved' => true,
         'updated' => Date.parse('2015-07-17 ((2457221j, 0s, 0n), +0s, 2299161j)'),
         'labels' => []
       }
@@ -29,6 +30,7 @@ describe MessageBuilder do
         'repo' => 'whitehall',
         'comments_count' => '1',
         'thumbs_up' => '1',
+        'approved' => false,
         'updated' => Date.parse('2015-07-13 ((2457217j, 0s, 0n), +0s, 2299161j)'),
         'labels' => []
       },
@@ -39,6 +41,7 @@ describe MessageBuilder do
         'repo' => 'whitehall',
         'comments_count' => '5',
         'thumbs_up' => '0',
+        'approved' => false,
         'updated' => Date.parse('2015-07-17 ((2457221j, 0s, 0n), +0s, 2299161j)'),
         'labels' => []
       }
@@ -58,6 +61,7 @@ describe MessageBuilder do
           'repo' => 'repo',
           'comments_count' => '0',
           'thumbs_up' => '0',
+          'approved' => false,
           'updated' => Date.today,
           'labels' => [
             { 'name' => 'wip' },
@@ -78,7 +82,7 @@ describe MessageBuilder do
     let(:pull_requests) { recent_pull_requests }
 
     it 'builds informative message' do
-      expect(message_builder.build).to eq("Good morning team! \n\n Here are the pull requests that need to be reviewed today:\n\n1) *whitehall* | tekin | updated yesterday\n<https://github.com/alphagov/whitehall/pull/2248|Remove all Import-related code> - 5 comments\n\nMerry reviewing!")
+      expect(message_builder.build).to eq("Hello team! \n\n Here are the pull requests that need to be reviewed today:\n\n1) *whitehall* | tekin | updated yesterday | :white_check_mark: \n<https://github.com/alphagov/whitehall/pull/2248|Remove all Import-related code> - 5 comments\n\nMerry reviewing!")
     end
 
     it 'has an informative poster mood' do
@@ -91,7 +95,7 @@ describe MessageBuilder do
     let(:pull_requests) { no_pull_requests }
 
     it 'builds seal of approval message' do
-      expect(message_builder.build).to eq("Good morning team! It's a beautiful day! :happyseal: :happyseal: :happyseal:\n\nNo pull requests to review today! :rainbow: :sunny: :metal: :tada:")
+      expect(message_builder.build).to eq("Aloha team! It's a beautiful day! :happyseal: :happyseal: :happyseal:\n\nNo pull requests to review today! :rainbow: :sunny: :metal: :tada:")
     end
 
     it 'has an approval poster mood' do

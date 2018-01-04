@@ -58,11 +58,11 @@ class MessageBuilder
 
   def list_pull_requests
     message = @content.keys.each_with_index.map { |title, n| present(title, n + 1) }
-    "Good morning team! \n\n Here are the pull requests that need to be reviewed today:\n\n#{message.join}\nMerry reviewing!"
+    "Hello team! \n\n Here are the pull requests that need to be reviewed today:\n\n#{message.join}\nMerry reviewing!"
   end
 
   def no_pull_requests
-    "Good morning team! It's a beautiful day! :happyseal: :happyseal: :happyseal:\n\nNo pull requests to review today! :rainbow: :sunny: :metal: :tada:"
+    "Aloha team! It's a beautiful day! :happyseal: :happyseal: :happyseal:\n\nNo pull requests to review today! :rainbow: :sunny: :metal: :tada:"
   end
 
   def bark_about_quotes
@@ -95,9 +95,10 @@ class MessageBuilder
     days = age_in_days(pr)
     thumbs_up = ''
     thumbs_up = " | #{pr["thumbs_up"].to_i} :+1:" if pr["thumbs_up"].to_i > 0
+    approved = pr["approved"] ? " | :white_check_mark: " : ""
     <<-EOF.gsub(/^\s+/, '')
-    #{index}\) *#{pr["repo"]}* | #{pr["author"]} | updated #{days_plural(days)}#{thumbs_up}
-    #{labels(pr)} <#{pr["link"]}|#{pr["title"]}> - #{pr["comments_count"]}#{comments(pull_request)}
+    #{index}\) *#{pr["repo"]}* | #{pr["author"]} | updated #{days_plural(days)}#{thumbs_up}#{approved}
+    #{labels(pr)} <#{pr["link"]}|#{html_encode(pr["title"])}> - #{pr["comments_count"]}#{comments(pull_request)}
     EOF
   end
 
@@ -120,5 +121,9 @@ class MessageBuilder
     pull_request['labels']
       .map { |label| "[#{label['name']}]" }
       .join(' ')
+  end
+
+  def html_encode(string)
+    string.tr('&', '&amp;').tr('<', '&lt;').tr('>', '&gt;')
   end
 end

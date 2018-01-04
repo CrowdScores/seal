@@ -1,12 +1,18 @@
 #!/bin/bash
 
-teams=(core-formats
-       publishing-platform
-       specialist-publisher
-       finding-things
-       custom
-       govuk-infrastructure
-       servicemanual)
+teams=(
+  content-tools
+  email
+  frontend-design
+  govuk-infrastructure
+  govuk-madetech
+  modelling-services
+  navigation
+  publishing-frontend
+  search-team
+  servicemanual
+  taxonomy
+)
 
 for team in ${teams[*]}; do
   ./bin/seal.rb $team
