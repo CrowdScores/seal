@@ -6,6 +6,7 @@ backend-developers:
     - geuben
     - partsalliance
     - keirwl
+    - NastyaVasilzhenko
 
   channel:
     "#developers"
