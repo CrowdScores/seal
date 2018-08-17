@@ -2,11 +2,11 @@
 
 backend-developers:
   members:
-    - andrewmwilson
     - geuben
     - partsalliance
     - keirwl
     - NastyaVasilzhenko
+    - Teh-Hamstah
 
   channel:
     "#developers"
